@@ -1,0 +1,78 @@
+function ex1() {
+    let nome_do_carro = document.getElementById("variavel").value;
+    document.getElementById("res1").innerText = nome_do_carro;
+}
+
+function ex2() {
+    let nome = document.getElementById("nome").value;
+    document.getElementById("res2").innerText = "Olá " + nome;
+}
+
+/* [Javascript] - Hora de Codar! */
+
+      /* 1 - Escreva um programa que crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário. */
+
+/*       var nome_do_carro = "Fusca";
+
+      alert("Resposta 1: " + nome_do_carro); */
+
+      /* 2 - Escreva um programa em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]". */
+/*       var nome = prompt("2 - Digite o seu nome");
+      alert("Resposta 2: Olá, " + nome); */
+
+      /* 3 - Escreva um programa em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]". */
+
+/*       var nome1 = prompt("3 - Digite o seu nome: ");
+      var idade = prompt("3 - Digite a sua idade: ");
+
+      alert("Resposta 3: Olá " + nome1 + ",sua idade é " + idade); */
+
+      /* 4 - Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável. */
+      /* var escolha = prompt("4 - Digite o numero da opção escolhida: \n 1- Retângulo \n 2- Quadrado \n 3 - Losango \n 4 - Trapezio \n 5 - Paralelogramo \n 6 - Triângulo \n 7 - Círculo")
+
+      switch (escolha){
+        case "1":
+          var base = prompt("Informe a base: ")
+          var h = prompt("Informe a altura: ")
+          area = base * h
+          alert("A area é " + area)
+          break;
+        case "2":
+          var lado = prompt("Informe o valor do lado: ")
+          area = lado * lado
+          alert("A area é " + area)
+          break;
+        case "3":
+          var dmaior = prompt("Informe o valor da diagonal maior: ")
+          var dmenor = prompt("Informe o valor da diagonal menor: ")
+          area = (dmaior * dmenor)/2
+          alert("A area é " + area)
+          break;
+        case "4":
+          var bmaior = prompt("Informe o valor da base maior: ")
+          var bmenor = prompt("Informe o valor da base menor: ")
+          var h = prompt("Informe o valor da altura: ")
+          area = ((bmaior + bmenor)*h)/2
+          alert("A area é " + area)
+          break;
+        case "5":
+          var base = prompt("Informe a base: ")
+          var h = prompt("Informe a altura: ")
+          area = base * h
+          alert("A area é " + area)
+          break;
+        case "6":
+          var base = prompt("Informe a base: ")
+          var h = prompt("Informe a altura: ")
+          area = (base * h)*2
+          alert("A area é " + area)
+        case "7":
+          var r = prompt("Informe o raio: ")
+          var pi = 3.14
+          area = pi * (r * r)
+          alert("A area é "+ area)
+          break;
+        default:
+          alert("Nenhum numero correspondente, tente novamento")
+        break;
+      } */
