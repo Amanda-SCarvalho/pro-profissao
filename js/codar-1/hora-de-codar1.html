@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hora de Codar</title>
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+  <h1>[Javascript] - Hora de Codar!</h1>
+  <section>
+    <h3> 1 - Escreva algo para ser atribuido a variavel</h3>
+    <input type="text" id="variavel" placeholder="Digite algo">
+    <button onclick="ex1()">Verificar</button>
+    <p class="resultado" id="res1"></p>
+  </section>
+
+  <section>
+    <h3> 2 - Escreva o seu nome</h3>
+    <input type="text" id="nome" placeholder="Digite o seu nome">
+    <button onclick="ex2()">Click</button>
+    <p class="resultado" id="res2"></p>
+  </section>
+
+  <section>
+    <h3> 3 - Escreva o seu nome</h3>
+    <input type="text" id="nome3" placeholder="Digite o seu nome">
+    <input type="number" id="idade3" placeholder="Digite a sua idade">
+    <button onclick="ex3()">Click</button>
+    <p class="resultado" id="res3"></p>
+  </section>
+
+  <section>
+
+    <h3>4 - Calcular área das figuras</h3>
+
+    <select id="escolha" onchange="ex4 ()">
+      <option value="">Escolha uma figura</option>
+      <option value="1">Retângulo</option>
+      <option value="2">Quadrado</option>
+      <option value="3">Losango</option>
+      <option value="4">Trapézio</option>
+      <option value="5">Paralelogramo</option>
+      <option value="6">Triângulo</option>
+      <option value="7">Círculo</option>
+    </select>
+
+    <div id="campos"></div>
+
+    <br>
+    <button onclick="calcular()">Calcular</button>
+
+    <p class="resultado" id="res4"></p>
+
+  </section>
+
+  <script src="hora-de-codar1.js"></script>
+  </script>
+</body>
+
+</html>
