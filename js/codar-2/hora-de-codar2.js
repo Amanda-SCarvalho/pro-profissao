@@ -109,3 +109,58 @@ function ex7() {
     let resultado = document.getElementById('res7');
     resultado.textContent = `Números informados: ${numeros.join(', ')}\nSoma dos valores inferiores a 72: ${soma}`;
 }
+
+/* 8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente" */
+function ex8() {
+    let numeros = [];
+    let soma = 0;
+    let valido = true;
+
+    for (let i = 1; i <= 4; i++) {
+        let valor = parseFloat(document.getElementById(`num8_${i}`).value);
+        if (valor > 0 && valor < 10) {
+            numeros.push(valor);
+            soma += valor;
+        } else {
+            valido = false;
+            break;
+        }
+    }
+
+    if (valido) {
+        let media = soma / numeros.length;
+        let resultado = document.getElementById('res8');
+        if (media > 5) {
+            resultado.textContent = "Você passou no teste";
+        } else {
+            resultado.textContent = "Tente novamente";
+        }
+    } else {
+        document.getElementById('res8').textContent = "Por favor, insira apenas números maiores que 0 e menores que 10.";
+    }
+}
+
+/* 9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu). */
+function ex9() {
+    let anoNascimento = parseInt(document.getElementById('anoNascimento').value);
+    let anoAtual = new Date().getFullYear();
+    let idade = anoAtual - anoNascimento;
+    let resultado = document.getElementById('res9');
+
+    if (idade >= 16) {
+        resultado.textContent = "Você pode votar este ano.";
+    } else {
+        resultado.textContent = "Você não pode votar este ano.";
+    }
+}
+
+/* 10. Tendo como entrada a altura e o gênero designado ao nascer (codificado da seguinte forma: 1: feminino - 2: masculino - ) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas. */
+
+
+/* **11. Uma micro calculadora**
+
+Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+
+O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos.
+
+**Observação**: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações */
