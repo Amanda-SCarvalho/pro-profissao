@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação 3</title>
+    <script>
+
+        /////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////
+
+        // Laços de repetição são estruturas de controle que permitem que um bloco de código seja executado várias vezes.
+        // Exemplos de laços de repetição
+
+        /////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////
+        // Laço while
+        var i = 0; // controladora do laço
+        var final = 1000000;
+
+        while (i <= final) {
+            var texto = "O número é " + i + "<br>";
+            console.log(texto);
+            document.write(texto);
+            i++; // é igual a i = i + 1 OU i += 1;
+        }
+
+        console.log("Fim do laço while");
+
+        var senha = prompt("Informe a sua senha, please: ");
+        while (senha != "5050") {
+            senha = prompt("Senha inválida. Tente novamente: ");
+        }
+
+        document.write("Senha correta!");
+
+        /////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////
+        // Laço for
+        //Laço for é dividido em três partes separadas por ponto e vírgula
+        //1. Inicialização
+        //2. Condição
+        //3. Incremento
+        for (var j = 0; j < 5; j++) {
+            var texto = "Contando: " + j + "<br>";
+            console.log(texto);
+            //document.write(texto);
+
+        }
+
+        console.log("Fim do laço for");
+
+
+      
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
