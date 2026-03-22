@@ -69,7 +69,6 @@ function ex6() {
   let nota1 = parseFloat(document.getElementById("num6_1").value);
   let nota2 = parseFloat(document.getElementById("num6_2").value);
 
-  // Validação simples
   if (isNaN(nota1) || isNaN(nota2)) {
     document.getElementById("res6").innerHTML = "Digite as duas notas!";
     return;
@@ -107,17 +106,23 @@ function mostrarResultadoFinal() {
 
 Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. */
 function ex7() {
-  let notas = [];
+  let soma = 0;
+
   for (let i = 1; i <= 6; i++) {
-    let nota = parseFloat(document.getElementById(`num7_${i}`).value);
-    if (isNaN(nota) || nota < 0 || nota > 10) {
-      document.getElementById("res7").innerHTML = "Digite uma nota válida (0 a 10)!";
+    let nota = document.getElementById("num7_" + i).value;
+
+    if (nota == "" || nota < 0 || nota > 10) {
+      document.getElementById("res7").innerHTML = "Digite notas válidas!";
       return;
     }
-    notas.push(nota);
+
+    soma = soma + Number(nota);
   }
-  let media = notas.reduce((a, b) => a + b, 0) / notas.length;
-  document.getElementById("res7").innerHTML = `Média: ${media.toFixed(2)}`;
+
+  let media = soma / 6;
+
+  document.getElementById("res7").innerHTML =
+    "Média: " + media.toFixed(2);
 }
 
 

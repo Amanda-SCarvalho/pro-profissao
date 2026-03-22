@@ -1,11 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codar 4</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <section>
+      <h3>1 - Estudantes</h3>
+
+      <input
+        type="text"
+        placeholder="Digite o nome do estudante"
+        id="estudante"
+      />
+      <button onclick="estudante()">Adicionar</button>
+      <button onclick="exibirLista()">Lista</button>
+      <p class="resultado" id="res1"></p>
+    </section>
+
+    <section>
+        <h3>2 - Planetas</h3>
+        <input type="text" placeholder="Digite o nome do planeta" id="planeta" />
+        <button onclick="planetas()">Verificar</button>
+        <p class="resultado" id="res2"></p>
+    </section>
+
+    <section>
+        <h3>3 - Lista de Compras</h3>
+        <input type="text" placeholder="Digite o nome da fruta" id="fruta" />
+        <button onclick="addFrutas()">Adicionar</button>
+        <button onclick="exibirFrutas()">Lista</button>
+        <button onclick="removerFrutas()">Remover</button>
+        <p class="resultado" id="res3"></p>
+    </section>
+
+    <button onclick="limpar()">Limpar</button>
+    <a class="btn" href="../../index.html">Voltar</a>
+    <script src="hora-de-codar4.js"></script>
+  </body>
 </html>
