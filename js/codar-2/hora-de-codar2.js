@@ -1,3 +1,15 @@
+function limpar() {
+  // limpa todos os inputs
+  document.querySelectorAll('input').forEach(input => {
+    input.value = '';
+  });
+
+  // limpa todos os resultados
+  document.querySelectorAll('[id^="res"]').forEach(el => {
+    el.textContent = '';
+  });
+}   
+
 /* 1. Escreva um programa em que o usuário informe dois números. Então escreva em tela o maior deles. */
 function ex1() {
     let num1 = parseFloat(document.getElementById('num1').value);
@@ -155,7 +167,21 @@ function ex9() {
 }
 
 /* 10. Tendo como entrada a altura e o gênero designado ao nascer (codificado da seguinte forma: 1: feminino - 2: masculino - ) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas. */
+function ex10() {
+    let altura = parseFloat(document.getElementById('altura').value);
+    let genero = parseInt(document.getElementById('genero').value);
+    let resultado = document.getElementById('res10');
+    let pesoIdeal;
 
+    if (genero === 1) {
+        pesoIdeal = 62.1 * altura - 44.7;
+    } else if (genero === 2) {
+        pesoIdeal = 72.7 * altura - 58;
+    }
+
+    resultado.textContent = `Peso ideal: ${pesoIdeal.toFixed(2)} kg`; //toFixed(2) usado para limitar a 2 casas decimais
+
+}
 
 /* **11. Uma micro calculadora**
 
@@ -164,3 +190,29 @@ Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma d
 O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos.
 
 **Observação**: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações */
+function ex11() {
+    let valor1 = parseInt(document.getElementById('num11_1').value);
+    let valor2 = parseInt(document.getElementById('num11_2').value);
+    let operacao = parseInt(document.getElementById('operacao').value);
+    let resultado = document.getElementById('res11');
+    let resultadoOperacao;
+    switch (operacao) {
+        case 1:
+            resultadoOperacao = valor1 + valor2;
+            break;
+        case 2:
+            resultadoOperacao = valor1 - valor2;
+            break;
+        case 3:
+            resultadoOperacao = valor1 / valor2;
+            if (valor2 === 0) {
+                resultado.textContent = "Erro: Divisão por zero não é permitida.";
+                return;
+            }
+            break;
+        case 4:
+            resultadoOperacao = valor1 * valor2;
+            break;
+    }
+    resultado.textContent = `Resultado: ${resultadoOperacao}`;
+}
