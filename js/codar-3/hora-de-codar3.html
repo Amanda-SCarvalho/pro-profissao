@@ -1,39 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codar 3</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     <h1>Hora de codar III - De volta ao Código</h1>
     <section>
-        <h3>1 - Contagem Regressiva</h3>
-        <button onclick="ex1()">Iniciar</button>
-        <p class="resultado" id="res1"></p>
+      <h3>1 - Contagem Regressiva</h3>
+      <button onclick="ex1()">Iniciar</button>
+      <p class="resultado" id="res1"></p>
     </section>
 
     <section>
-        <h3>2 - Divisão de Valores</h3>
-        <input type="number" id="num2_1" placeholder="Digite o primeiro número" />
-        <input type="number" id="num2_2" placeholder="Digite o segundo número" />
-        <button onclick="ex2()">Calcular</button>
-        <p class="resultado" id="res2"></p>
+      <h3>2 - Divisão de Valores</h3>
+      <input type="number" id="num2_1" placeholder="Digite o primeiro número" />
+      <input type="number" id="num2_2" placeholder="Digite o segundo número" />
+      <button onclick="ex2()">Calcular</button>
+      <p class="resultado" id="res2"></p>
     </section>
 
     <section>
-        <h3>3 - Contagem Decrescente 10 a 1</h3>
-        <button onclick="ex3()">Iniciar</button>
-        <p class="resultado" id="res3"></p>
+      <h3>3 - Contagem Decrescente 10 a 1</h3>
+      <button onclick="ex3()">Iniciar</button>
+      <p class="resultado" id="res3"></p>
     </section>
 
     <section>
-        <h3>4 - Média Aritmética 15 a 100</h3>
-        <button onclick="ex4()">Calcular</button>
-        <p class="resultado" id="res4"></p>
+      <h3>4 - Média Aritmética 15 a 100</h3>
+      <button onclick="ex4()">Calcular</button>
+      <p class="resultado" id="res4"></p>
     </section>
+
+    <section>
+      <h3>5 - Média Aritmética entre Dois Números</h3>
+      <input type="number" id="num5_1" placeholder="Digite o primeiro número" />
+      <input type="number" id="num5_2" placeholder="Digite o segundo número" />
+      <button onclick="ex5()">Calcular</button>
+      <p class="resultado" id="res5"></p>
+    </section>
+
+    <section>
+      <h3>6 - Cálculo de Média e Contagem de Aprovados</h3>
+      <input type="number" id="num6_1" placeholder="Digite a primeira nota" />
+      <input type="number" id="num6_2" placeholder="Digite a segunda nota" />
+      <button onclick="ex6()">Armazenar</button>
+      <p class="resultado" id="res6"></p>
+    </section>
+
+    <section>
+      <h3>7 - Cálculo de Média de Notas</h3>
+      <input type="number" id="num7_1" placeholder="Digite a primeira nota" />
+      <input type="number" id="num7_2" placeholder="Digite a segunda nota" />
+      <input type="number" id="num7_3" placeholder="Digite a terceira nota" />
+      <input type="number" id="num7_4" placeholder="Digite a quarta nota" />
+      <input type="number" id="num7_5" placeholder="Digite a quinta nota" />
+      <input type="number" id="num7_6" placeholder="Digite a sexta nota" />
+      <button onclick="ex7()">Calcular</button>
+      <p class="resultado" id="res7"></p>
+    </section>
+
+    <section>
+      <h3>8 - Contagem de Números entre 1 e N</h3>
+      <input type="number" id="num8" placeholder="Digite o valor de N" />
+      <button onclick="ex8()">Calcular</button>
+      <p class="resultado" id="res8"></p>
+    </section>
+
+    <section>
+      <h3>9 - Os 10 Números Inteiros Maiores que 100</h3>
+      <button onclick="ex9()">Calcular</button>
+      <p class="resultado" id="res9"></p>
+    </section>
+
+    <section>
+      <h3>10 - Contagem de Valores entre 24 e 42</h3>
+      <input type="number" id="num10_1" placeholder="Digite o primeiro valor" />
+      <input type="number" id="num10_2" placeholder="Digite o segundo valor" />
+      <input type="number" id="num10_3" placeholder="Digite o terceiro valor" />
+      <input type="number" id="num10_4" placeholder="Digite o quarto valor" />
+      <input type="number" id="num10_5" placeholder="Digite o quinto valor" />
+      <input type="number" id="num10_6" placeholder="Digite o sexto valor" />
+      <input type="number" id="num10_7" placeholder="Digite o sétimo valor" />
+      <input type="number" id="num10_8" placeholder="Digite o oitavo valor" />
+      <input type="number" id="num10_9" placeholder="Digite o nono valor" />
+      <input type="number" id="num10_10" placeholder="Digite o décimo valor" />
+      <button onclick="ex10()">Calcular</button>
+      <p class="resultado" id="res10"></p>
+    </section>
+
+    <section>
+      <h3>11 - Tabuadas de 1 a N</h3>
+      <input type="number" id="num11" placeholder="Digite o valor de N" />
+      <button onclick="ex11()">Calcular</button>
+      <p class="resultado" id="res11"></p>
+    </section>
+
+    <button onclick="limpar()">Limpar</button>
+    <a class="btn" href="../../index.html">Voltar</a>
 
     <script src="hora-de-codar3.js"></script>
-</body>
+  </body>
 </html>
