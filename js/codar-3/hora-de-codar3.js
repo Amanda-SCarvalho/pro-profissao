@@ -18,8 +18,8 @@ function ex1() {
 /* 2 - Escreva um algoritmo para ler 2 valores informados pelo usuário e enquanto o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor, mas para a mesma variável. Ou seja, para o segundo valor não pode ser aceito o valor zero nem um valor negativo. O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor e exibir o resultado ao usuário. */
 
 function ex2() {
-  let num1 = parseFloat(document.getElementById("num2_1").value);
-  let num2 = parseFloat(document.getElementById("num2_2").value);
+  let num1 = Number.parseFloat(document.getElementById("num2_1").value);
+  let num2 = Number.parseFloat(document.getElementById("num2_2").value);
   let resultado = document.getElementById("res2");
 
   if (num2 === 0 || num2 < 0) {
@@ -54,9 +54,9 @@ function ex4() {
 
 /* 5 - Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo. */
 function ex5() {
-  let num1 = parseInt(document.getElementById("num5_1").value);
-  let num2 = parseInt(document.getElementById("num5_2").value);
-  media = (num1 + num2) / 2;
+  let num1 = Number.parseInt(document.getElementById("num5_1").value);
+  let num2 = Number.parseInt(document.getElementById("num5_2").value);
+  let media = (num1 + num2) / 2;
   document.getElementById("res5").innerHTML =
     `A média aritmética dos números ${num1} e ${num2} é: ${media}`;
 }
@@ -66,8 +66,8 @@ function ex5() {
 let aprovados = 0;
 let totalAlunos = 0;
 function ex6() {
-  let nota1 = parseFloat(document.getElementById("num6_1").value);
-  let nota2 = parseFloat(document.getElementById("num6_2").value);
+  let nota1 = Number.parseFloat(document.getElementById("num6_1").value);
+  let nota2 = Number.parseFloat(document.getElementById("num6_2").value);
 
   if (isNaN(nota1) || isNaN(nota2)) {
     document.getElementById("res6").innerHTML = "Digite as duas notas!";
@@ -130,7 +130,7 @@ function ex7() {
 
 N  é um valor informado pelo usuário */
 function ex8() {
-  let n = parseInt(document.getElementById("num8").value);
+  let n = Number.parseInt(document.getElementById("num8").value);
   let resultado = "";
   for (let i = 1; i <= n; i++) {
     resultado += i + " ";
@@ -154,7 +154,7 @@ function ex10() {
   let dentroIntervalo = 0;
   let foraIntervalo = 0;
     for (let i = 1; i <= 10; i++) {
-      let valor = parseFloat(document.getElementById(`num10_${i}`).value);
+      let valor = Number.parseFloat(document.getElementById(`num10_${i}`).value);
       if (valor >= 24 && valor <= 42) {
         dentroIntervalo++;
       } else {
@@ -170,7 +170,7 @@ function ex10() {
 
 /* 11 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário. */
 function ex11() {
-  let n = parseInt(document.getElementById("num11").value);
+  let n = Number.parseInt(document.getElementById("num11").value);
   let resultado = "";
     for (let i = 0; i <= 10; i++) {
         resultado += `${i} x ${n} = ${i * n}<br>`;

@@ -12,8 +12,8 @@ function limpar() {
 
 /* 1. Escreva um programa em que o usuário informe dois números. Então escreva em tela o maior deles. */
 function ex1() {
-    let num1 = parseFloat(document.getElementById('num1').value);
-    let num2 = parseFloat(document.getElementById('num2').value);
+    let num1 = Number.parseFloat(document.getElementById('num1').value);
+    let num2 = Number.parseFloat(document.getElementById('num2').value);
     let resultado = document.getElementById('res1');
 
     if (num1 > num2) {
@@ -27,7 +27,7 @@ function ex1() {
 
 /* 2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero. */
 function ex2() {
-    let valor = parseFloat(document.getElementById('valor').value);
+    let valor = Number.parseFloat(document.getElementById('valor').value);
     let resultado = document.getElementById('res2');
 
     if (valor > 0) {
@@ -41,9 +41,9 @@ function ex2() {
 /* 
 3. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles. */
 function ex3() {
-    let num1 = parseFloat(document.getElementById('num3_1').value);
-    let num2 = parseFloat(document.getElementById('num3_2').value);
-    let num3 = parseFloat(document.getElementById('num3_3').value);
+    let num1 = Number.parseFloat(document.getElementById('num3_1').value);
+    let num2 = Number.parseFloat(document.getElementById('num3_2').value);
+    let num3 = Number.parseFloat(document.getElementById('num3_3').value);
     let resultado = document.getElementById('res3');
 
     if (num1 > num2 && num1 > num3) {
@@ -57,9 +57,9 @@ function ex3() {
 
 /* 4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores. */
 function ex4() {
-    let num1 = parseFloat(document.getElementById('num4_1').value);
-    let num2 = parseFloat(document.getElementById('num4_2').value);
-    let num3 = parseFloat(document.getElementById('num4_3').value);
+    let num1 = Number.parseFloat(document.getElementById('num4_1').value);
+    let num2 = Number.parseFloat(document.getElementById('num4_2').value);
+    let num3 = Number.parseFloat(document.getElementById('num4_3').value);
     let resultado = document.getElementById('res4');
 
     let maior, segundoMaior;
@@ -84,7 +84,7 @@ function ex5() {
     let soma = 0;
 
     for (let i = 1; i <= 6; i++) {
-        let valor = parseFloat(document.getElementById(`num5_${i}`).value);
+        let valor = Number.parseFloat(document.getElementById(`num5_${i}`).value);
         numeros.push(valor);
         soma += valor;
     }
@@ -97,10 +97,10 @@ function ex5() {
 
 /* 6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes) */
 function ex6() {
-    let num1 = parseFloat(document.getElementById('num6_1').value);
-    let num2 = parseFloat(document.getElementById('num6_2').value);
-    let num3 = parseFloat(document.getElementById('num6_3').value);
-    let num4 = parseFloat(document.getElementById('num6_4').value);
+    let num1 = Number.parseFloat(document.getElementById('num6_1').value);
+    let num2 = Number.parseFloat(document.getElementById('num6_2').value);
+    let num3 = Number.parseFloat(document.getElementById('num6_3').value);
+    let num4 = Number.parseFloat(document.getElementById('num6_4').value);
     let resultado = document.getElementById('res6');
 
     let maior = Math.max(num1, num2, num3, num4);
@@ -112,7 +112,7 @@ function ex7() {
     let numeros = [];
     let soma = 0;
     for (let i = 1; i <= 6; i++) {
-        let valor = parseFloat(document.getElementById(`num7_${i}`).value);
+        let valor = Number.parseFloat(document.getElementById(`num7_${i}`).value);
         numeros.push(valor);
         if (valor < 72) {
             soma += valor;
@@ -129,7 +129,7 @@ function ex8() {
     let valido = true;
 
     for (let i = 1; i <= 4; i++) {
-        let valor = parseFloat(document.getElementById(`num8_${i}`).value);
+        let valor = Number.parseFloat(document.getElementById(`num8_${i}`).value);
         if (valor > 0 && valor < 10) {
             numeros.push(valor);
             soma += valor;
@@ -154,7 +154,7 @@ function ex8() {
 
 /* 9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu). */
 function ex9() {
-    let anoNascimento = parseInt(document.getElementById('anoNascimento').value);
+    let anoNascimento = Number.parseInt(document.getElementById('anoNascimento').value);
     let anoAtual = new Date().getFullYear();
     let idade = anoAtual - anoNascimento;
     let resultado = document.getElementById('res9');
@@ -168,8 +168,8 @@ function ex9() {
 
 /* 10. Tendo como entrada a altura e o gênero designado ao nascer (codificado da seguinte forma: 1: feminino - 2: masculino - ) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas. */
 function ex10() {
-    let altura = parseFloat(document.getElementById('altura').value);
-    let genero = parseInt(document.getElementById('genero').value);
+    let altura = Number.parseFloat(document.getElementById('altura').value);
+    let genero = Number.parseInt(document.getElementById('genero').value);
     let resultado = document.getElementById('res10');
     let pesoIdeal;
 
@@ -191,9 +191,9 @@ O programa deve calcular e escrever o resultado dessa operação sobre os dois v
 
 **Observação**: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações */
 function ex11() {
-    let valor1 = parseInt(document.getElementById('num11_1').value);
-    let valor2 = parseInt(document.getElementById('num11_2').value);
-    let operacao = parseInt(document.getElementById('operacao').value);
+    let valor1 = Number.parseInt(document.getElementById('num11_1').value);
+    let valor2 = Number.parseInt(document.getElementById('num11_2').value);
+    let operacao = Number.parseInt(document.getElementById('operacao').value);
     let resultado = document.getElementById('res11');
     let resultadoOperacao;
     switch (operacao) {

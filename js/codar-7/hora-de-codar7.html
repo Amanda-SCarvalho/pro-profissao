@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codar 7</title>
-        <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codar VII</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-      <section>
 
-    <h3>Caixa Bancario</h3>
+<h3>Hotel Rockstar</h3>
 
-    <select id="escolha" onchange="inicio ()">
-      <option value="">Selecione uma opção</option>
-      <option value="1">Saldo</option>
-      <option value="2">Deposito</option>
-      <option value="3">Saque</option>
-      <option value="4">Sair</option>
-    </select>
+<section>
+  <select name="escolha" id="escolha">
+    <option value="1">Reserva de Quartos</option>
+    <option value="2">Cadastro de Hóspedes</option>
+    <option value="3">Eventos</option>
+    <option value="4">Ar condicionado</option>
+    <option value="5">Abastecimento de Carros</option>
+    <option value="6">Sair</option>
+  </select>
 
-    <div id="campos"></div>
+  <div id="campos"></div>
 
-    <br>
-    <button onclick="inicio()">Entrar</button>
+  <input type="submit" value="Entrar" onclick="inicio()">
+</section>
 
-    <p class="resultado" id="res"></p>
+Abastecimento
+Relatórios Operacionais
+Sair
+  </select>
 
-  </section>
-    <script src="hora-de-codar7.js"></script>
+  <div id="campos"></div>
+
+  <input type="submit" value="Entrar" onclick="inicio()">
+</section>
+
+<a class="btn" href="../../index.html">Voltar</a>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="hora-de-codar7.js"></script>
+
 </body>
 </html>
