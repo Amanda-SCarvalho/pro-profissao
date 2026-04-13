@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codar 5</title>
-        <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
-      <section>
 
-    <h3>Caixa Bancario</h3>
+    <section>
+        <h2>Banco Digital</h2>
 
-    <select id="escolha" onchange="inicio ()">
-      <option value="">Selecione uma opção</option>
-      <option value="1">Saldo</option>
-      <option value="2">Deposito</option>
-      <option value="3">Saque</option>
-      <option value="4">Sair</option>
-    </select>
+        <p>Escolha uma opção:</p>
 
-    <div id="campos"></div>
+        <input id="escolha" placeholder="Digite de 1 a 6">
 
-    <br>
-    <button onclick="inicio()">Entrar</button>
+        <button onclick="inicio()">Confirmar</button>
 
-    <p class="resultado" id="res"></p>
+        <div id="campos"></div>
 
-  </section>
-    <script src="hora-de-codar7.js"></script>
+        <div class="resultado" id="res"></div>
+
+        <hr>
+
+        <p><b>Menu:</b></p>
+        <p>
+            1 - Saldo<br>
+            2 - Extrato<br>
+            3 - Saque<br>
+            4 - Depósito<br>
+            5 - Transferência<br>
+            6 - Sair
+        </p>
+    </section>
+    <script src="hora-de-codar5.js"></script>
 </body>
+
 </html>
