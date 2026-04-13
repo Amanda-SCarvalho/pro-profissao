@@ -179,7 +179,11 @@ function erro() {
 }
 
 function sair() {
-    alert(`${nome}, foi um prazer ter você por aqui!`);
+  Swal.fire({
+    title: `${nome}, foi um prazer ter você por aqui!`,
+    icon: "success",
+    confirmButtonText: "Fechar"
+  });
 }
 
 iniciarSistema();
